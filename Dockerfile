@@ -5,7 +5,8 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-COPY target/api-backend-0.0.1-SNAPSHOT.jar .
+# Build a release artifact.
+RUN mvn package -DskipTests
 
 # Run the web service on container startup.
 CMD ["java","-jar","/app/target/api-backend-0.0.1-SNAPSHOT.jar","--spring.profiles.active=prod"]
