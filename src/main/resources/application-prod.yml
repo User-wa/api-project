@@ -7,3 +7,16 @@ spring:
     url: jdbc:mysql://124.222.135.93:3306/api
     username: root
     password: wfywfy
+dubbo:
+  application:
+    name: dubbo-springboot-demo-provider
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://124.222.135.93:8848
+  consumer:
+    timeout: 10000
+    provider:
+      timeout: 30000
