@@ -114,6 +114,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
             interfaceInfo = innerInterfaceInfoService.getInterfaceInfo(path, method);
         } catch (Exception e) {
             log.error("getInterfaceInfo error", e);
+            e.printStackTrace();
         }
         if (interfaceInfo == null) {
             return handleNoAuth(response);

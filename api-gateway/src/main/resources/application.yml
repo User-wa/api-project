@@ -45,5 +45,8 @@ dubbo:
     port: -1
   registry:
     id: nacos-registry
-    address: nacos://localhost:8848
-
+    address: nacos://localhost:8854
+  consumer:
+    timeout: 10000
+    provider:
+      timeout: 30000

@@ -23,7 +23,7 @@ public class NameController {
     }
 
     @PostMapping("/post")
-    public String getNameByPost(@RequestParam String name) {
+    public String getNameByPost(@RequestBody String name) {
         return "POST 你的名字是" + name;
     }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- @author <a href="https://github.com/liyupi">程序员鱼皮</a> -->
-<!-- @from <a href="https://yupi.icu">编程导航知识星球</a> -->
+
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -11,18 +11,18 @@
         <version>2.7.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.yupi</groupId>
-    <artifactId>yuapi-backend</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>yuapi-backend</name>
-    <description>鱼皮接口</description>
+    <groupId>com.fy</groupId>
+    <artifactId>api-backend</artifactId>
+    <version>0.0.1</version>
+    <name>api-backend</name>
+    <description>Api接口</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.yupi</groupId>
-            <artifactId>yuapi-common</artifactId>
+            <groupId>com.fy</groupId>
+            <artifactId>api-common</artifactId>
             <version>0.0.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
@@ -81,8 +81,8 @@
             <version>3.0.3</version>
         </dependency>
         <dependency>
-            <groupId>com.yupi</groupId>
-            <artifactId>yuapi-client-sdk</artifactId>
+            <groupId>com.fy</groupId>
+            <artifactId>api-client-sdk</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
@@ -136,5 +136,5 @@
             </plugin>
         </plugins>
     </build>
-<!-- 负责人【yupi】 https://github.com/liyupi -->
+
 </project>
