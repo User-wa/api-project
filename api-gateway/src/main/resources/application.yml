@@ -47,4 +47,5 @@ dubbo:
     id: nacos-registry
     address: nacos://localhost:8854
   consumer:
-    timeout: 30000
+    timeout: 40000
+    retries: 0
