@@ -1,5 +1,7 @@
 package com.yupi.yuapiclientsdk.client;
 
+
+
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
@@ -21,7 +23,7 @@ import static com.yupi.yuapiclientsdk.utils.SignUtils.genSign;
  */
 public class YuApiClient {
 
-    private static final String GATEWAY_HOST = "http://124.222.135.93:8090";
+    private static final String GATEWAY_HOST = "http://localhost:8090";
 
     private String accessKey;
 
